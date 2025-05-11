@@ -1,0 +1,164 @@
+{
+	"info": {
+		"_postman_id": "a141fdc1-0ec4-4f12-bbdf-f6a40f455e78",
+		"name": "wsb-backend trainings",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42795987"
+	},
+	"item": [
+		{
+			"name": "Get all trainings",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8008/v1/users",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8008",
+					"path": [
+						"v1",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get trainings by user ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8008/v1/trainings/2",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8008",
+					"path": [
+						"v1",
+						"trainings",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get trainings finished after date",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8008/v1/trainings/2",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8008",
+					"path": [
+						"v1",
+						"trainings",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get trainings by activity type",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8008/v1/trainings/2",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8008",
+					"path": [
+						"v1",
+						"trainings",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create training",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Nole\",\r\n    \"lastName\": \"Ksum\",\r\n    \"birthdate\": \"1982-01-01\",\r\n    \"email\": \"nole.ksum@spacey.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8008/v1/users",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8008",
+					"path": [
+						"v1",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update user by ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Elon\",\r\n    \"lastName\": \"Musk\",\r\n    \"birthdate\": \"1983-01-01\",\r\n    \"email\": \"elon.musk@spacex.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8008/v1/users/13",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8008",
+					"path": [
+						"v1",
+						"users",
+						"13"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
